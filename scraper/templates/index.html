@@ -1,0 +1,14 @@
+<form action="stackoverflow"> <!-- directs user to stackoverflow.html after completing form -->
+  <!-- Provide complete url for webscraper to search -->
+  <input type="text" name="url" placeholder="url">
+  <input type="text" name="tag" placeholder="tag">
+  <input type="text" name="attribute" placeholder="attribute"> <!-- This does not work reliably right now. The only value accepted in the webscraper is class. -->
+  <input type="text" name="return_url" placeholder="return url"><br>
+  <!-- If user does not have access to an email server, this can be left blank in order to view results without sending an email -->
+  <input type="checkbox" name="email_results" id="email_results" value="true"><label for="email_results">Do you want the results sent to you in an email?</label>
+  <input type="email" name="from_email" placeholder="from email address">
+  <input type="text" name="email_server" placeholder="server:port number">
+  <input type="password" name="password" placeholder="from email password">
+  <input type="email" name="to_email" placeholder="to email address">
+  <input type="submit" name="submit" value="Submit">
+</form>
